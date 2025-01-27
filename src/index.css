@@ -34,7 +34,7 @@ h2 {
   z-index: -1;       
 }
 .text-success{
-  color: blue !important;
+  color: #3D195B !important;
 }
 @keyframes gradient {
   0% {
