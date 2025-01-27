@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Vilket lag vann Premier League-titeln säsongen 2019-2020?",
+    "options": ["Chelsea", "Liverpool", "Leicester City", "Manchester City"],
+    "answer": "Liverpool"
+  },
+  {
+    "question": "Vilken Aston Villa-spelare gjorde det avgörande målet i deras seger över Manchester United 2004 på Villa Park?",
+    "options": [
+      "Darius Vassell",
+      "Juan Pablo Ángel",
+      "Gareth Barry",
+      "Lee Hendrie"
+    ],
+    "answer": "Gareth Barry"
+  },
+  {
+    "question": "Vem innehar rekordet för det snabbaste hattricket i Premier Leagues historia?",
+    "options": [
+      "Sadio Mané",
+      "Gabriel Agbonlahor",
+      "Cristiano Ronaldo",
+      "Mohamed Salah"
+    ],
+    "answer": "Sadio Mané"
+  },
+  {
+    "question": "Vilken Aston Villa-produkt blev deras yngsta kapten någonsin i Premier League 2019?",
+    "options": [
+      "Ashley Young",
+      "Jack Grealish",
+      "James Milner",
+      "Gabriel Agbonlahor"
+    ],
+    "answer": "Jack Grealish"
+  },
+  {
+    "question": "Vilket lag undvek precis nedflyttning på sista dagen av Premier League-säsongen 2019-2020?",
+    "options": ["Watford", "Aston Villa", "Bournemouth", "West Ham United"],
+    "answer": "Aston Villa"
+  },
+  {
+    "question": "Vilken svensk spelare blev känd för sina frisparkar i Premier League med Sunderland?",
+    "options": [
+      "Zlatan Ibrahimović",
+      "Sebastian Larsson",
+      "Fredrik Ljungberg",
+      "Anders Svensson"
+    ],
+    "answer": "Sebastian Larsson"
+  },
+  {
+    "question": "Vem är den svenska spelaren som vann Premier League med Arsenal under 'The Invincibles'-säsongen?",
+    "options": [
+      "Fredrik Ljungberg",
+      "Marcus Allbäck",
+      "Olof Mellberg",
+      "Zlatan Ibrahimović"
+    ],
+    "answer": "Fredrik Ljungberg"
+  }
+]
