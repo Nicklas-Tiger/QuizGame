@@ -26,8 +26,8 @@ const Quiz = () => {
         if (prev > 0) {
           return prev - 1;
         }
-        clearInterval(timer); // Stoppa timern när tiden är 0
-        return prev; // Behåll värdet som 0
+        clearInterval(timer);
+        return prev;
       });
     }, 1000);
 
@@ -120,8 +120,8 @@ const Quiz = () => {
               feedback && option === questions[currentQuestion].answer
                 ? "list-group-item-success"
                 : feedback && option === selectedOption
-                ? "list-group-item-danger"
-                : ""
+                  ? "list-group-item-danger"
+                  : ""
             }`}
           >
             {option}

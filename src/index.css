@@ -117,7 +117,7 @@ button:hover {
   }
   @media (min-width: 1080px) {
     .custom-image {
-      max-width: 300px;
+      max-width: 250px;
     }
   }
 
