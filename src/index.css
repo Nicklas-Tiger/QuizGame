@@ -99,7 +99,7 @@ button:hover {
     color:rgb(233, 12, 12) !important;
   }
   .custom-image {
-    max-width: 145px;
+    max-width: 125px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -115,6 +115,12 @@ button:hover {
       max-width: 600px; 
     }
   }
+  @media (min-width: 1080px) {
+    .custom-image {
+      max-width: 300px;
+    }
+  }
+
   .container p{
     color: ##89CFF0;
   }
