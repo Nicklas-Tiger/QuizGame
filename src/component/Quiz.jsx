@@ -22,7 +22,13 @@ const Quiz = () => {
     if (feedback || isQuizComplete || !hasStarted) return;
 
     const timer = setInterval(() => {
-      setTimeLeft((prev) => prev - 1);
+      setTimeLeft((prev) => {
+        if (prev > 0) {
+          return prev - 1;
+        }
+        clearInterval(timer); // Stoppa timern när tiden är 0
+        return prev; // Behåll värdet som 0
+      });
     }, 1000);
 
     return () => clearInterval(timer);
