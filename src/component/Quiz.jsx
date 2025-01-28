@@ -18,9 +18,7 @@ const Quiz = () => {
       .catch((error) => console.error("Failed to load questions:", error));
   }, []);
 
-  useEffect(() => {
-    if (feedback || isQuizComplete || !hasStarted) return;
-
+  const startTimer = () => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev > 0) {
@@ -30,9 +28,16 @@ const Quiz = () => {
         return prev;
       });
     }, 1000);
-
     return () => clearInterval(timer);
-  }, [currentQuestion, feedback, isQuizComplete, hasStarted]);
+  };
+
+  useEffect(() => {
+    if (feedback || isQuizComplete || !hasStarted) return;
+
+    const clearTimer = startTimer();
+
+    return clearTimer;
+  }, [feedback, isQuizComplete, hasStarted]);
 
   useEffect(() => {
     if (timeLeft === 0) {
@@ -106,7 +111,11 @@ const Quiz = () => {
         Fråga {currentQuestion + 1} av {questions.length}
       </h3>
       <p className="text-center text-primary">
-        Tid kvar: <strong>{timeLeft} sek</strong>
+        {feedback === null && (
+          <>
+            Tid kvar: <strong>{timeLeft} sek</strong>
+          </>
+        )}
       </p>
       <p className="lead">
         <strong>{questions[currentQuestion].question}</strong>
