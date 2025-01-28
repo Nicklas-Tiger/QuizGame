@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Results from "./Results";
 
-const QuizGame = () => {
+const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -134,4 +134,4 @@ const QuizGame = () => {
   );
 };
 
-export default QuizGame;
+export default Quiz;
